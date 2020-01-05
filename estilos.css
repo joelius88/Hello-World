@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.header{	
+	min-height: 70px;	
+	background: white url("images/melopidojpg.jpg")no-repeat center ;
+	background-size: cover;
+}
+.header h1{
+	color: hsla(108,77%,35%,1.00);	
+	text-transform: uppercase;
+}
+
+h3{
+	background: #D5D5D5;
+	text-align: center;	
+	color: hsla(0,0%,21%,1.00);
+	font-weight: lighter;
+	letter-spacing: 1px;
+	padding: 5px 0;
+	text-shadow: none;
+}
+p{
+	width: 100%;
+}
+/*
+div .imagen{
+	width: 100%;
+}
+según moisés esto va para que la img se responsive, pero con la estructura y el width del 100% en las sig líneas es suficiente
+*/
+div .imagen img{
+	width: 100%;
+	border: 3px solid green;
+	box-sizing: border-box;
+}
+
+
+.formu{
+	background: hsla(133,100%,88%,1.00);
+	padding: 15px;
+	margin: 20px 0;
+	text-shadow: none;
+}
+.formu input{
+	color: hsla(120,90%,24%,1.00) !important;
+}
+
+.pie{
+	position: fixed;
+	bottom: 0;
+	background: hsla(0,0%,91%,1.00);
+	width: 100%;
+}
+.pie h4{
+	line-height: 0px;
+	text-align: center;
+}
+
+.rouge{
+	background: hsla(343,55%,47%,1.00) !important;
+	color: white !important;
+	text-shadow: none !important;
+}
+.telefono{
+	background: hsla(343,54%,66%,1.00) !important;
+}
+
+
+
+
+
+
+

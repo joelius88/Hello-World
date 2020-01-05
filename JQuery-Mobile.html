@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JQuery-Mobile</title>
+<link rel="stylesheet" type="text/css" href="estilos.css">
+<link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5.min.css">
+<!-- llamar primero al jquery madre, antes que al mobile-->
+<script src="jquery.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+	
+<!--	cada página que se visualizará lleva el atributo data-role="page"  -->
+<!-- data-them="a" se carga por defecto del jquery -->
+<!--  class="ui-state-persist" es para que se quede marcado mientras une está en esa sección	-->
+<!--  data-role="footer" no permite ponerle luego el atributo css position:fixed (averiguar cómo hacerlo) -->
+	
+	
+	<div data-role="page" id="page1">	
+		
+		<div data-role="header" data-theme="a" class="header">
+			<h1>melopido.com</h1>
+		</div><!--	fin HEADER PAGE1  -->	
+		
+		<div data-role="navbar" data-iconpos="left">
+			<ul>
+				<li>
+					<a href="#page1" data-icon="home" class="ui-btn-active ui-state-persist">Home</a>
+				</li>
+				<li>
+					<a href="#page2" data-icon="info" data-transition="slide">Nosotros</a>
+				</li>
+				<li>
+					<a href="#page3" data-icon="check" data-transition="slide">Contacto</a>
+				</li>
+			</ul>
+		</div><!--	fin NAVABR PAGE1  -->
+		
+		<div data-role="content">
+			<h3>Home</h3>
+			<p>El contenido de la Home</p>
+			<div class="imagen">
+				<img src="images/mono1.jpg" alt="mono1">
+			</div><!--	fin IMAGEN PAGE1  -->
+		</div><!--	fin CONTENT PAGE1  -->
+		
+		<div data-role="collapsible">
+			<h2>aghahadhadh</h2>
+			<p>jfasfgigjowro  yloryryj ojw owe wegtwgt wyw y wop ryoryowkgtwur  uwru wtyoyu g wgtwgtw w wyw wrywr wywyw wywryh  eryjkwery wrywr</p>
+		</div>
+		<div data-role="collapsible">
+			<h2>aghahadhadh</h2>
+			<p>jfasfgigjowro  yloryryj ojw owe wegtwgt wyw y wop ryoryowkgtwur  uwru wtyoyu g wgtwgtw w wyw wrywr wywyw wywryh  eryjkwery wrywr</p>
+		</div>
+		<div data-role="collapsible">
+			<h2>aghahadhadh</h2>
+			<p>jfasfgigjowro  yloryryj ojw owe wegtwgt wyw y wop ryoryowkgtwur  uwru wtyoyu g wgtwgtw w wyw wrywr wywyw wywryh  eryjkwery wrywr</p>
+		</div><!--	fin CONTEXPANS PAGE1	-->
+		
+		<!--<div class="pie">
+			<h4>Es este un footer position fixed</h4>
+		</div>	fin FOOTER PAGE1  -->
+		
+	</div><!--	fin PAGE1  -->
+	
+	
+	
+
+	<div data-role="page" id="page2">	
+		
+		<div data-role="header" data-theme="a" class="header">
+			<h1>melopido.com</h1>
+		</div><!--	fin HEADER PAGE2  -->	
+		
+		<div data-role="navbar" data-iconpos="left">
+			<ul>
+				<li>
+					<a href="#page1" data-icon="home" data-transition="slide" data-direction="reverse">Home</a>
+				</li>
+				<li>
+					<a href="#page2" data-icon="info" class="ui-btn-active ui-state-persist">Nosotros</a>
+				</li>
+				<li>
+					<a href="#page3" data-icon="check" data-transition="slide">Contacto</a>
+				</li>
+			</ul>			
+		</div><!--	fin NAVABR PAGE2  -->
+		
+		<div data-role="content">
+			
+			<h3>Nosotros</h3>
+			<p>El contenido de la pantalla nosotros</p>
+			<div class="imagen">
+				<img src="images/mono2.jpg" alt="mono2">
+			</div><!--	fin IMAGEN PAGE2  -->
+			
+			<div data-role="collapsible-set">
+				<div data-role="collapsible" data-collapsed="true">
+					<h2>Valores1</h2>
+					<ul>
+						<li>Compromiso</li>
+						<li>Eciciencia</li>
+						<li>Superación</li>
+					</ul>
+				</div><!--	fin COLLAPSIBLE PAGE2  -->
+				<div data-role="collapsible" data-collapsed="true">
+					<h2>Valores2</h2>
+					<ul>
+						<li>Compromiso</li>
+						<li>Eciciencia</li>
+						<li>Superación</li>
+					</ul>
+				</div><!--	fin COLLAPSIBLE PAGE2  -->
+				<div data-role="collapsible" data-collapsed="true">
+					<h2>Valores3</h2>
+					<ul>
+						<li>Compromiso</li>
+						<li>Eciciencia</li>
+						<li>Superación</li>
+					</ul>
+				</div><!--	fin COLLAPSIBLE PAGE2  -->
+			</div><!--	fin COLLAPSIBLE-SET PAGE2  -->	
+			
+		</div><!--	fin CONTENT PAGE2  -->
+		
+		<!--<div class="pie">
+			<h4>Es este un footer position fixed</h4>
+		</div>	fin FOOTER PAGE2  -->
+		
+	</div><!--	fin PAGE2-->
+	
+	
+	
+
+	<div data-role="page" id="page3">	
+		
+		<div data-role="header" data-theme="a" class="header">
+			<h1>melopido.com</h1>
+		</div><!--	fin HEADER PAGE3  -->	
+		
+		<div data-role="navbar" data-iconpos="left">
+			<ul>
+				<li>
+					<a href="#page1" data-icon="home" data-transition="slide" data-direction="reverse">Home</a>
+				</li>
+				<li>
+					<a href="#page2" data-icon="info"  data-transition="slide" data-direction="reverse">Nosotros</a>
+				</li>
+				<li>
+					<a href="#page3" data-icon="check"  class="ui-btn-active ui-state-persist">Contacto</a>
+				</li>
+			</ul>
+		</div><!--	fin NAVABR PAGE3  -->		
+		
+		<div data-role="content">
+			
+			<h3>Contacto</h3>
+			<p>Contacta con nosotros através del sigiente formulario o del tefléfono que encontrarás abajo</p>	
+			
+			<form method="post" action="#" class="formu">
+				
+				<fieldset class="ui-field-contain">				
+				  <label for="nombre">Nombre:</label>
+				  <input type="text" name="nombre" id="nombre">
+				</fieldset>	
+				
+				<fieldset class="ui-field-contain">
+				  <label for="día">Elige el día:</label>
+				  <select name="día" id="día">
+					  <option value="Lunes">Lunes</option>
+					  <option value="Martes">Martes</option>
+					  <option value="Miércoles">Miércoles</option>
+					  <option value="Jueves">Jueves</option>
+					  <option value="Viernes">Viernes</option>
+				  </select>				
+				</fieldset>
+				
+				<fieldset class="ui-field-contain">
+				<label for="nivEsp">Nivel de Idioma Español</label>
+				<input type="range" name="nivEsp" id="nivEsp" value="5" min="0" max="10">
+				</fieldset>
+				
+				<fieldset class="ui-field-contain">
+				<label for="exp">Desea recibir notificaciones?</label>
+				<input type="checkbox" data-role="flipswitch" name="exp" id="exp" data-on-text="Sí" data-off-text="No" checked>
+				</fieldset>
+				
+				<input type="submit" value="enviar" id="enviar" data-icon="check" data-iconpos="right">
+												
+			</form><!--	fin FORMU PAGE3  -->
+			
+			
+			<a href="#ventana" data-rel="popup" class="ui-btn rouge">Call to Action</a>
+			
+			<div data-role="popup" id="ventana" class="ui-content telefono" data-transition="fade">
+				
+        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+        <a href="tel:60000000" class="ui-btn">600 000 000</a> 
+        <a href="facetime:60000000" class="ui-btn">Llama con Facetime</a>
+					
+       </div>	<!--	fin POPUP PAGE3  -->
+			
+			
+		</div><!--	fin CONTENT PAGE3  -->	
+				
+	</div><!--	fin PAGE3  -->
+	
+	<div class="pie">
+			<h4>Es este un footer position fixed</h4>
+	</div><!--	fin FOOTER PAGE3  -->
+	
+	
+	
+	
+</body>
+</html>
+
+
